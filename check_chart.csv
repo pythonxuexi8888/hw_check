@@ -1,0 +1,6 @@
+processor,ID,version,l1_cache,l2_cache,l3_cache,cores,threads
+memory,size,speed,slot,channel,vendor,version
+network,ID,numa_node,interrupt_node,vendor,version
+harddrive,device,size,vendor,version
+nvme,device,size,model_number,product,life,numa_node,interrupt_node
+raid,vendor,product

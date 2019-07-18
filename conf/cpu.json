@@ -1,0 +1,10 @@
+{
+    "core_logical": "grep -i 'description: CPU' lshw.tmp.txt | wc -l", 
+    "cpu_physical": "grep -A9 'description: CPU' lshw.tmp.txt | grep 'slot:' | awk -F: '{print $2}' | sed 's/^[ \t]*//g'",
+    "cpu_threads": "grep -A14 'description: CPU' lshw.tmp.txt | grep 'configuration:' | awk '{print $4}' | awk -F= '{print $2}'",
+    "versions": "grep -A9 'description: CPU' lshw.tmp.txt | grep 'version:' | awk -F: '{print $2}' | sed 's/^[ \t ]*//g'",
+    "cache_l1": "grep -A4 'L1 cache' lshw.tmp.txt | grep 'capacity:' | awk -F: '{print $2}' | sed 's/^[ \t ]*//g'",
+    "cache_l2": "grep -A4 'L2 cache' lshw.tmp.txt | grep 'capacity:' | awk -F: '{print $2}' | sed 's/^[ \t ]*//g'",
+    "cache_l3": "grep -A4 'L3 cache' lshw.tmp.txt | grep 'capacity:' | awk -F: '{print $2}' | sed 's/^[ \t ]*//g'",
+    "cores_num": "grep -A14 'description: CPU' lshw.tmp.txt | grep 'configuration:' | awk '{print $2}' | awk -F= '{print $2}'"
+}
