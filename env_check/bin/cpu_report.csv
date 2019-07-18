@@ -1,0 +1,3 @@
+socket,product_verdor,l1_cache,l2_cache,l3_cach3,cores,threads
+SOCKET 0,Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz,512KiB,2MiB,20MiB,8,16
+SOCKET 1,Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz,512KiB,2MiB,20MiB,8,16

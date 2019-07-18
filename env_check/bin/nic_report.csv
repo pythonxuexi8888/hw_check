@@ -1,0 +1,9 @@
+ID,numa_node,interrupt_node,vendor,product_version
+eth2-ok,0,0,Intel Corporation,82599ES 10-Gigabit SFI/SFP+ Network Connection
+eth5,0,0,Intel Corporation,82599ES 10-Gigabit SFI/SFP+ Network Connection
+eth0,0,--,Intel Corporation,I350 Gigabit Network Connection
+eth1,0,0,Intel Corporation,I350 Gigabit Network Connection
+eth2,0,0,Intel Corporation,I350 Gigabit Network Connection
+eth4,0,--,Intel Corporation,I350 Gigabit Network Connection
+eth6,1,1,Intel Corporation,82599ES 10-Gigabit SFI/SFP+ Network Connection
+eth7,1,1,Intel Corporation,82599ES 10-Gigabit SFI/SFP+ Network Connection

@@ -1,0 +1,139 @@
+                                                                                                                                                                                                                                  {
+    "id" : "storage",
+    "class" : "storage",
+    "claimed" : true,
+    "handle" : "PCI:0000:0a:00.0",
+    "description" : "Non-Volatile memory controller",
+    "physid" : "0",
+    "businfo" : "pci@0000:0a:00.0",
+    "version" : "05",
+    "width" : 64,
+    "clock" : 33000000,
+    "configuration" : {
+      "driver" : "nvme",
+      "latency" : "0"
+    },
+    "capabilities" : {
+      "storage" : true,
+      "pm" : "Power Management",
+      "msi" : "Message Signalled Interrupts",
+      "msix" : "MSI-X",
+      "pciexpress" : "PCI Express",
+      "nvm_express" : true,
+      "bus_master" : "bus mastering",
+      "cap_list" : "PCI capabilities listing",
+      "rom" : "extension ROM"
+    }
+  },
+  {
+    "id" : "storage",
+    "class" : "storage",
+    "claimed" : true,
+    "handle" : "PCI:0000:08:00.0",
+    "description" : "Non-Volatile memory controller",
+    "physid" : "0",
+    "businfo" : "pci@0000:08:00.0",
+    "version" : "05",
+    "width" : 64,
+    "clock" : 33000000,
+    "configuration" : {
+      "driver" : "nvme",
+      "latency" : "0"
+    },
+    "capabilities" : {
+      "storage" : true,
+      "pm" : "Power Management",
+      "msi" : "Message Signalled Interrupts",
+      "msix" : "MSI-X",
+      "pciexpress" : "PCI Express",
+      "nvm_express" : true,
+      "bus_master" : "bus mastering",
+      "cap_list" : "PCI capabilities listing",
+      "rom" : "extension ROM"
+    }
+  },
+  {
+    "id" : "sata:0",
+    "class" : "storage",
+    "claimed" : true,
+    "handle" : "PCI:0000:00:11.4",
+    "description" : "SATA controller",
+    "product" : "C610/X99 series chipset sSATA Controller [AHCI mode]",
+    "vendor" : "Intel Corporation",
+    "physid" : "11.4",
+    "businfo" : "pci@0000:00:11.4",
+    "version" : "05",
+    "width" : 32,
+    "clock" : 66000000,
+    "configuration" : {
+      "driver" : "ahci",
+      "latency" : "0"
+    },
+    "capabilities" : {
+      "sata" : true,
+      "msi" : "Message Signalled Interrupts",
+      "pm" : "Power Management",
+      "ahci_1.0" : true,
+      "bus_master" : "bus mastering",
+      "cap_list" : "PCI capabilities listing"
+    }
+  },
+                                                                                                {
+    "id" : "sata:1",
+    "class" : "storage",
+    "claimed" : true,
+    "handle" : "PCI:0000:00:1f.2",
+    "description" : "SATA controller",
+    "product" : "C610/X99 series chipset 6-Port SATA Controller [AHCI mode]",
+    "vendor" : "Intel Corporation",
+    "physid" : "1f.2",
+    "businfo" : "pci@0000:00:1f.2",
+    "version" : "05",
+    "width" : 32,
+    "clock" : 66000000,
+    "configuration" : {
+      "driver" : "ahci",
+      "latency" : "0"
+    },
+    "capabilities" : {
+      "sata" : true,
+      "msi" : "Message Signalled Interrupts",
+      "pm" : "Power Management",
+      "ahci_1.0" : true,
+      "bus_master" : "bus mastering",
+      "cap_list" : "PCI capabilities listing"
+    }
+  },
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                  {
+    "id" : "sas",
+    "class" : "storage",
+    "claimed" : true,
+    "handle" : "PCI:0000:8b:00.0",
+    "description" : "Serial Attached SCSI controller",
+    "product" : "Series 8 12G SAS/PCIe 3",
+    "vendor" : "Adaptec",
+    "physid" : "0",
+    "businfo" : "pci@0000:8b:00.0",
+    "logicalname" : "scsi0",
+    "version" : "01",
+    "width" : 64,
+    "clock" : 33000000,
+    "configuration" : {
+      "driver" : "aacraid",
+      "latency" : "0"
+    },
+    "capabilities" : {
+      "sas" : true,
+      "pm" : "Power Management",
+      "msi" : "Message Signalled Interrupts",
+      "msix" : "MSI-X",
+      "pciexpress" : "PCI Express",
+      "bus_master" : "bus mastering",
+      "cap_list" : "PCI capabilities listing",
+      "rom" : "extension ROM",
+      "emulated" : "Emulated device"
+    },
+    "children" : [
+                                                                                                        
+    ]
+  }                                                                                                                                                                                                                                                                                                                                                                                                                                                                        

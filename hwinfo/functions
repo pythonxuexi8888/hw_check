@@ -1,0 +1,43 @@
+#!/bin/bash 
+
+OLD_IFS=$IFS
+
+tmpfile=$(mktemp)
+lshw > $tmpfile || exit 1
+
+#report_file="report.csv"
+function _refresh_report_file(){
+    [[ -f $report_file ]] && rm -f $report_file 
+    touch $report_file
+}
+
+
+function _append_field(){
+    local line_num=$1 
+    shift
+    local field_content="$@"
+    local line_max=$(wc -l < $report_file)
+    if [[ $line_max -lt ${line_num} ]] ;then
+        echo "$field_content" >> $report_file
+    else
+        sed -i "${line_num}s/$/,${field_content//\//\\/}/g" $report_file 
+    fi
+}
+function _update_info(){
+    local info=$@
+    IFS="|"
+    local nu=1
+    for field in $info;do
+        IFS="$OLD_IFS"
+        _append_field $nu $field 
+        nu=$((nu + 1))
+    done
+    IFS="$OLD_IFS"
+}
+function _change_delimiter(){
+    [[ $# -gt 0 ]] && exec 0<$1
+    sed ':label;N;s/\n/|/g;b label' <&0
+    # close when no data
+    exec 0<&-
+}
+

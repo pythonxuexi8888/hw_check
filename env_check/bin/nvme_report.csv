@@ -1,0 +1,3 @@
+device,product_version,size,vendor,life,numa_node,interrupt_node
+/dev/nvme0n1,P45C7016D22,1.60 TB,Non-Volatile memory controller: Vendor 0x1c5f Device 0x0540,19%,0,0
+/dev/nvme1n1,P45C7016D22,1.60 TB,Non-Volatile memory controller: Vendor 0x1c5f Device 0x0540,19%,0,0
